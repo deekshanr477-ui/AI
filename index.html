@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Diagnosis Expert System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Medical Diagnosis Expert System</h1>
+
+    <form method="POST" action="http://127.0.0.1:5000/diagnose">
+        <label>Enter Symptoms (comma separated)</label>
+        <input type="text" name="symptoms" placeholder="fever, cough, headache" required>
+
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Enter age" required>
+
+        <label>Medical History</label>
+        <input type="text" name="history" placeholder="diabetes, asthma">
+
+        <button type="submit">Get Diagnosis</button>
+    </form>
+
+    <p class="note">⚠ This system provides preliminary diagnosis only.</p>
+</div>
+
+</body>
+</html>
